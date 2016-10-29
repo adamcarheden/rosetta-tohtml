@@ -1,9 +1,15 @@
 "use strict";
 var rosetta = require('rosetta.js');
 
+var scriptAttrs = ['async','integrity','src','type','text','languate','defer','crossorigin'];
+
 function replaceElement(oldE, newE) {
-	for (var i=0; i<oldE.attributes.length; i++)
+	for (var i=0; i<oldE.attributes.length; i++) {
+		// This is probably unnecessary, but...
+		if (scriptAttrs.indexOf(oldE.attributes[i].name.toLowerCase()) >= 0) continue;
+
 		newE.setAttribute(oldE.attributes[i].name, oldE.attributes[i].value);
+	}
 	// This doesn't work because rosetta processes the output of 
 	// getElementsByTagName('script'), which is a NodeList, which is a
 	// live collection. So when we replace a <script> with a different tag,
