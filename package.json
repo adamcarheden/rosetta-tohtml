@@ -1,0 +1,21 @@
+{
+  "name": "rosetta-tohtml",
+  "version": "1.0.0",
+  "description": "Replaces <script> tags with HTML by processing either their content or src attribute through a user-defined function",
+  "main": "rosetta-tohtml.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamcarheden/rosetta-tohtml.git"
+  },
+  "author": "Adam Carheden <adam.carheden@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "exports-loader": "^0.6.3",
+    "rosetta.js": "^1.0.0",
+    "webpack": "^1.13.3"
+  }
+}
