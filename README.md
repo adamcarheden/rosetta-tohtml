@@ -2,7 +2,7 @@
 
 > Translates script tags into HTML using a user-defined function
 
-[Rosetta](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Rosetta) is a framework for using languages other than Javascript in web browsers by providing a hook into the *type* attribute of HTML <script> tags. You provide Rosetta with a function that translates the content of the script tag into Javascript. rosetta-tohtml lets you provide a function to translate the content of the script tag into html instead of Javascript, allowing you to write content for the web in something other than HTML. Markdown is the obvious choice, but for that see [rosetta-markdown](https://www.npmjs.com/package/rosetta-markdown).
+[Rosetta](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Rosetta) is a framework for using languages other than Javascript in web browsers by providing a hook into the *type* attribute of HTML script tags. You provide Rosetta with a function that translates the content of the script tag into Javascript. rosetta-tohtml lets you provide a function to translate the content of the script tag into html instead of Javascript, allowing you to write content for the web in something other than HTML. Markdown is the obvious choice, but for that see [rosetta-markdown](https://www.npmjs.com/package/rosetta-markdown).
 
 ## Demo
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	rosettaToHTML.translateAll();
 });	
 ```
-Dump the above in a <script> tag and then dump markdown in a <script type='text/md'> tag.
+Dump the above in a script tag and then dump markdown in a script tag with a type='text/md' attribute.
 
 ## Contribute
 ``` bash
