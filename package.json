@@ -11,8 +11,15 @@
     "type": "git",
     "url": "https://github.com/adamcarheden/rosetta-tohtml.git"
   },
-  "author": "Adam Carheden <adam.carheden@gmail.com>",
+  "author": {
+		"name": "Adam Carheden",
+    "email": "adam.carheden@gmail.com"
+	},
   "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamcarheden/rosetta-tohtml"
+  },
   "devDependencies": {
     "exports-loader": "^0.6.3",
     "rosetta.js": "^1.0.0",
