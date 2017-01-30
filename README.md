@@ -6,7 +6,7 @@
 
 ## Demo
 
-[Live Demo](https://plnkr.co/edit/2y8cLQ?p=preview)
+[Live Demo](https://plnkr.co/edit/4t41es?p=preview)
 
 ## Install
 ``` bash
